@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Minha Namorada</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffe6f0;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #ff69b4;
+            font-size: 3em;
+        }
+
+        p {
+            font-size: 1.5em;
+            margin: 20px 0;
+        }
+
+        .heart {
+            font-size: 2em;
+            color: red;
+            margin: 20px 0;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ff69b4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #ff85c9;
+        }
+
+        img {
+            width: 300px;
+            border-radius: 15px;
+            margin-top: 20px;
+            display: none; /* Inicialmente escondida */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Eu te amo!</h1>
+        <p>Todos os dias ao seu lado são especiais e inesquecíveis.</p>
+        <p class="heart">❤️</p>
+        <button class="btn" onclick="mostrarImagem()">Para sempre juntos</button>
+    </div>
+
+    <div id="imagem-container">
+        <!-- Certifique-se de que o caminho abaixo está correto -->
+        <img id="minha-imagem" src="IMG_3973.JPG" alt="Nós dois juntos">
+    </div>
+
+    <script>
+        function mostrarImagem() {
+            var imagem = document.getElementById("minha-imagem");
+            imagem.style.display = "block";  // Exibe a imagem quando o botão é clicado
+        }
+    </script>
+
+</body>
+</html>
